@@ -4,7 +4,7 @@ namespace Guofu989\Mylib;
 use AlibabaCloud\Client\AlibabaCloud;
 
 class Alibaba{
-    public static function client($id,$key){
+    public static function init($id,$key){
         AlibabaCloud::accessKeyClient($id, $key)->regionId('cn-hangzhou')->asDefaultClient();
     }
 
